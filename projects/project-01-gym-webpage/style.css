@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("images/background/bachground.png");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center  ;
+    min-height: 100vh;
+}
+.logo {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+nav {
+    background-image:url(images/background/navBar.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    padding: 5px 0;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin-top: 3px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
