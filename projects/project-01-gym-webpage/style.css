@@ -8,24 +8,37 @@ body {
     background-size: cover ;
     background-repeat: no-repeat;
     background-position: center  ;
-    min-height: 100vh;
+    min-height: 102vh;
+}
+
+nav {
+    position: relative;
+
+    background-image: url(images/background/navBar.png);
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 30px;
+    padding: 5px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .logo {
-    text-align: center;
-    color: white;
-    font-size: 45px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    top: 10px;
+    left: 30px;
+    position: absolute;
+      
+
   }
-nav {
-    background-image:url(images/background/navBar.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center ;
-    padding: 5px 0;
-    display: flex;
-   flex-direction: column;
-    align-items: center;
+  .logo img {
+    width: 170px;
+    height: auto;
+    border-radius: 50%;
+   object-fit: cover;
+    border: 2px solid #58510d;
 }
 nav ul {
     list-style: none;
@@ -37,4 +50,60 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+nav a:hover {
+    color: #f5f5f5;
+    text-decoration: underline;
+     font-size:20px;
+     transition: 0.1s;
+}
+#home {
+  
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#home h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    text-shadow: 4px 3px 07px rgba(0, 0, 0, 0.5);
+    letter-spacing: 6px;
+    
+}
+#home p {
+    font-size: 22.5px;
+    width: 850px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.btn{
+display: flex;
+allign-items: center;
+justify-content: center;
+padding: 24px 25px;
+color: rgb(163, 153, 153);
+background-color: #493801;
+border-radius: 22px;
+border: 2px solid #271e02;
+width: 150px;
+padding: 20px 20px;
+
+text-decoration: none;
+transition: 0.5s;
+}
+.btn-container {
+display: flex;
+gap: 170px;
+}
+.btn:hover{
+    background-color: #291f01;
+    color: white;
+    opacity: 0.8;
+    
 }
