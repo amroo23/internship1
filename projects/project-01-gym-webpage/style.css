@@ -8,12 +8,12 @@ body {
     background-size: cover ;
     background-repeat: no-repeat;
     background-position: center  ;
+    backlground-attachment: scroll;
     min-height: 102vh;
 }
 
 nav {
     position: relative;
-
     background-image: url(images/background/navBar.png);
     background-size: 40% 100%;
     background-repeat: no-repeat;
@@ -57,6 +57,33 @@ nav a:hover {
      font-size:20px;
      transition: 0.1s;
 }
+
+section:not(#home) {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    width: 80%; 
+    margin: 80px auto; 
+    padding: 50px 30px; 
+    border-radius: 20px; 
+    text-align: center; 
+    border: 1px solid #493801; 
+    
+}
+
+section:not(#home) h2 {
+    color: #5c5645; 
+    font-size: 36px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/* Style the paragraphs inside those sections */
+section:not(#home) p {
+    font-size: 18px;
+    line-height: 1.6; 
+    max-width: 800px;
+    margin: 0 auto; 
+}
 #home {
   
     text-align: center;
@@ -69,11 +96,14 @@ nav a:hover {
 
 }
 #home h2 {
+    color: #928347; 
     font-size: 40px;
     margin-bottom: 20px;
     margin-top: -5px;
     text-shadow: 4px 3px 07px rgba(0, 0, 0, 0.5);
     letter-spacing: 6px;
+    
+    
     
 }
 #home p {
@@ -84,7 +114,7 @@ nav a:hover {
 }
 .btn{
 display: flex;
-allign-items: center;
+align-items: center;
 justify-content: center;
 padding: 24px 25px;
 color: rgb(163, 153, 153);
@@ -106,4 +136,107 @@ gap: 170px;
     color: white;
     opacity: 0.8;
     
+}
+
+section#about {
+
+    border-radius: 15px; 
+    padding: 50px; 
+    margin: 50px auto; 
+    max-width: auto; 
+    text-align: center;
+    color: #928347; 
+
+}
+
+section#about h2 {
+    color: #777055; 
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+section#about p {
+    font-size: 21px;
+}
+
+section#programs {
+    border-radius: 15px; 
+    padding: 50px; 
+    margin: 50px auto; 
+    max-width: auto;
+    height: 530px; 
+    text-align: center;
+}
+section#programs ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    padding-top: 0px;
+     gap: 60px;
+    
+     margin: 80px;
+   
+}
+section#programs li {
+    /* Using YOUR exact trainer card styling */
+    border: 1px solid rgba(78, 66, 15, 0.4); 
+    border-radius: 15px; 
+    padding: 40px 20px; 
+    color: #928347; 
+    font-size: 24px;
+    text-align: center;
+    
+    
+    /* Adding a subtle dark background so it stands out */
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+.trainer-card p {
+    font-size: 18px;
+    color: #928347; 
+    margin-bottom: 10px;
+}
+
+.trainers-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    height: 600px;
+
+}
+.trainer-card {
+   
+    border: 1px  solid rgba(78, 66, 15, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    width: 650px;
+    height: 600px;
+}
+.trainer-card h3 {
+    color: #928347; 
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+ .trainer-card img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+}
+.contact-form{
+display: flex;
+flex-direction: column;
+gap: 20px;
+max-width: 600px;
+margin: 20px auto;
+}
+.contact-form input,
+.contact-form textarea {
+background-color: #dbcfa5;
+border: 1px solid #493801;
+border-radius: 5px;
+padding: 10px;
+font-size: 16px;
+color: rgb(0, 0, 0);
 }
