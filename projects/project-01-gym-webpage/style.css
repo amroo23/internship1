@@ -6,7 +6,7 @@
 }
 /* --- Global Variables (Master Control Panel)*/
 :root {
-    --main-color: #979075; 
+    --main-color: #fcfcfc; 
     --dark-gold: #493801;
     --card-bg: #a8a393;
     --light-text: #e0e0e0;
@@ -130,6 +130,7 @@ section:not(#home) p {
     margin-bottom: 100px;
 
 }
+
 .btn{
 display: flex;
 align-items: center;
@@ -251,10 +252,11 @@ gap: 200px;
 flex-wrap: wrap;
 
 }
+
 section#plans-container p {
 margin-bottom: 70px;
 color: var(--card-bg);
-font-size: 22px;
+font-size: 24px;
 
 }
 section#plans-container  h2 {
@@ -267,6 +269,7 @@ section#plans-container  h2 {
  padding-top: 20px;
 padding-bottom: 90px;
  transition: 0.3s;
+ width: 260px;
 
 }
 .plan-card h2 {
@@ -279,7 +282,7 @@ padding-bottom: 90px;
 
 }
 .plan-card li {
-    margin: 15px 0;
+    margin: 20px 0;
     color: var(--light-text);
 
 }
@@ -327,15 +330,15 @@ gap: 20px;
 max-width: 600px;
 margin: 20px auto;
 
-}
+} 
 .contact-form input,
 .contact-form textarea {
-background-color: #423b24;
+background-color: rgba(39, 37, 29, 0.8);
 border: 1px solid #493801;
 border-radius: 5px;
 padding: 10px;
 font-size: 16px;
-color: rgb(0, 0, 0);
+color: rgb(255, 251, 251);
 
 }
 footer {
